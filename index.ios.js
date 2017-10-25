@@ -1,23 +1,12 @@
 //importing library to help create component
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Text,
-  AppRegistry,
-  View} 
+  View,
+  AppRegistry
+}
   from 'react-native';
-  import Header from './src/components/header';
-  import AlbumList from './src/components/AlbumList';
-  
+import DrawerNavigation from './src/components/DrawerNavigation';
 
-//create a component 
+AppRegistry.registerComponent('project', () => DrawerNavigation);
 
-const App = () =>(
-  <View>
-  <Header headerText={'Albums'} />
-  <AlbumList />
-</View>
-  );
-
-
-// Render it to device
-AppRegistry.registerComponent('project',() => App);
