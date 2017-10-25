@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { DrawerNavigator } from 'react-navigation';
 import AlbumList from './AlbumList';
 import ALbumDetail from './AlbumDetail';
-//import Drawer from './Drawer';
+
 
 const DrawerNavigation = DrawerNavigator({
   MovieScreen: {
@@ -14,7 +14,7 @@ const DrawerNavigation = DrawerNavigator({
   RallyScreen: {
     screen: (props) => <AlbumList {...props} url={"https://rallycoding.herokuapp.com/api/music_albums"} />,
     navigationOptions: {
-      drawerLabel:'Rally',
+      drawerLabel:'Songs',
     }
   },
   DetailScreen:{
